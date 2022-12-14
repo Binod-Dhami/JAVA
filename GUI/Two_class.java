@@ -1,4 +1,5 @@
 package GUI;
+import java.awt.Color;
 import java.awt.event.*;
 import javax.swing.*;
 public class Two_class extends JFrame{
@@ -10,8 +11,8 @@ public class Two_class extends JFrame{
         first=new JTextField();
         second=new JTextField();
         result=new JTextField();
-        sum=new JButton();
-        sub=new JButton();
+        sum=new JButton("Sum");
+        sub=new JButton("Sub");
         first.setBounds(250,100,200,50);
         second.setBounds(250,150,200,50);
         result.setBounds(250,200,200,50);
@@ -25,32 +26,37 @@ public class Two_class extends JFrame{
         sub.addActionListener(c);
     }
 
+
 public static void main (String[]args){
     new Two_class();
 }
+}
     class Controller implements ActionListener{
         Two_class tw;
-        private int a;
-        private int b;
         public Controller(Two_class tw){
             this.tw=tw;
         }
     
+   
     public void actionPerformed(ActionEvent e){
-        int a=Integer.parseInt(first.getText());
-        int b=Integer.parseInt(second.getText());
-        if(e.getSource()==sum)
-         int String ans =a+b;
-        result.setText(" "+ans);
+        if(e.getSource()==this.tw.sum){
+            int a=Integer.parseInt(this.tw.first.getText());
+            int b=Integer.parseInt(this.tw.second.getText());
+         int addition =a+b;
+        this.tw.result.setText(" "+addition);
+        this.tw.result.setForeground(Color.RED);
     }
     else
     {
-    int ans=a-b;
-    result.setText(" "+ans);
+        int a=Integer.parseInt(this.tw.first.getText());
+        int b=Integer.parseInt(this.tw.second.getText());
+    int Subtraction=a-b;
+    this.tw.result.setText(" "+Subtraction);
+    this.tw.result.setForeground(Color.BLUE);
     }
-
-
+    }
 }
+    
 
 
 
