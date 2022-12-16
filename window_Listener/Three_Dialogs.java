@@ -1,13 +1,12 @@
 package window_Listener;
 import javax.swing.*;
-
 import java.awt.event.ActionListener;
 import java.awt.event.WindowListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowEvent;
 class Three_Dialogs extends JFrame implements Actionlistener,WindowListener{
     JButton b;
-
+//three dilog
    Three_Dialogs(){
     setSize(500,700);
     setTitle("Title");
