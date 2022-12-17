@@ -9,6 +9,7 @@ class Sum{
         int b=sc.nextInt();
         int sum=a+b;
         System.out.println("sum is:"+sum);
+        sc.close();
 
     }
 }
