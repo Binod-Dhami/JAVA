@@ -29,5 +29,6 @@ JOptionPane.showMessageDialog(this,"You are Female.");
 }    
 public static void main(String args[]){    
 new Two_Buttons ();    
-}}
+}
+}
 
