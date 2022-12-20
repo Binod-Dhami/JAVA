@@ -44,4 +44,5 @@ public class CheckBox extends JFrame implements ItemListener {
         new CheckBox();
     }
     
+    }
 }
