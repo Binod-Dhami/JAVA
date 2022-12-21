@@ -1,8 +1,5 @@
 package Own_Dialog_Box;
 import javax.swing.*;
-
-import window_Listener.Actionlistener;
-
 import java.awt.*;
 import java.awt.event.*;
 
@@ -24,11 +21,16 @@ public class MyDialog {
         d.add(btn);
         d.setVisible(true);
         d.setLocationRelativeTo(frame);
-        btn.addActionListener((ActionListener) new Actionlistener() {
+        btn.addActionListener(new Actionlistener() {
+            
             public void actionPerformed(ActionEvent e){
                 d.setVisible(false);
             }
         });
+    }
+
+    private static float Component(String enterAligement) {
+        return 0;
     }
 }
 
