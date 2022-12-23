@@ -8,9 +8,9 @@ public class first {
     public static void main (String[]args){
 
    try{
-    Class.forName("");
-    Connection con=DriverManager.getConnection("");
-    Statement smt=con.createStatement();
+    Class.forName("com.mysql.cj.jdbc.Driver");
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/<name of database>" ,<username>,<password>);
+    Statement stmt=con.createStatement();
     smt.executeUpdate("");
     System.out.println();
     con.close();
