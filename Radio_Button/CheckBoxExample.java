@@ -1,8 +1,10 @@
 package Radio_Button;
 
 import java.awt.*; 
+//class with extend frame
  class CheckBoxExample extends Frame 
  { 
+    //construction
       CheckBoxExample() 
      { 
          setLayout(new FlowLayout());  
@@ -18,6 +20,7 @@ import java.awt.*;
  } 
     class CheckboxJavaExample 
    { 
+    //main funcation
           public static void main(String args[]) 
          { 
                  CheckBoxExample frame = new CheckBoxExample(); 
