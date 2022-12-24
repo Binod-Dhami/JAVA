@@ -21,7 +21,7 @@ public class MyDialog {
         d.add(btn);
         d.setVisible(true);
         d.setLocationRelativeTo(frame);
-        btn.addActionListener(new Actionlistener() {
+        btn.addActionListener((ActionListener) new Actionlistener() {
             
             public void actionPerformed(ActionEvent e){
                 d.setVisible(false);
