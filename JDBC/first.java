@@ -11,7 +11,7 @@ public class first {
     Class.forName("com.mysql.cj.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/<name of database>" ,<username>,<password>);
     Statement stmt=con.createStatement();
-    smt.executeUpdate("");
+    stmt.executeUpdate("");
     System.out.println();
     con.close();
    }
