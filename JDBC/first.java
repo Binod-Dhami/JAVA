@@ -9,7 +9,7 @@ public class first {
 
    try{
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/<name of database>" ,<username>,<password>);
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/<name of database>" ,<uname>,<psw>);
     Statement stmt=con.createStatement();
     stmt.executeUpdate("");
     System.out.println();
