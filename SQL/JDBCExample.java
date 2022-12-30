@@ -54,7 +54,9 @@ public class JDBCExample {
       }
       // Close result set
       rs.close();
-
+      /*sql = "DELETE FROM Employees WHERE id = 100";
+      stmt.executeUpdate(sql);
+*/
       // Clean-up environment
       stmt.close();
       conn.close();
