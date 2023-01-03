@@ -10,7 +10,7 @@ public class JDBCExample {
 
   //  Database credentials
   static final String USER = "root";
-  static final String PASS = "2057122binod";
+  static final String PASS = "";
 
   public static void main(String[] args) {
     Connection conn = null;

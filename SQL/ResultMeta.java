@@ -7,7 +7,7 @@ public static void main(String args[])
 throws ClassNotFoundException,SQLException{  
 Class.forName("com.mysql.jdbc.Driver");  
 Connection con=DriverManager.getConnection(  
-"jdbc:mysql://localhost/student","root","2057122binod");  
+"jdbc:mysql://localhost/student","root","");  
   
 PreparedStatement ps=con.prepareStatement("select * from student");  
 ResultSet rs=ps.executeQuery();  
