@@ -38,7 +38,7 @@ public class Menu {
     */
     public static void main(String[]args)throws ClassNotFoundException,SQLException{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection cn=DriverManager.getConnection(null, null, null);
+        Connection cn=DriverManager.getConnection("Jdbc:mysql://localhost:3306/student","root","");
         Database dbase=new Database();
         int Choice;
         dbase.showMenus();
